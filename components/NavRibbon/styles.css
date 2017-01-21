@@ -8,8 +8,13 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@media screen and (max-width: 1024px) {
-  .content {
-    padding: 0 16px;
-  }
+.ribbon {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2em;
 }
