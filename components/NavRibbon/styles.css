@@ -10,8 +10,9 @@
 
 .ribbon {
   width: 100%;
-  display: block;
+  height: 150px;
   text-align: center;
+  line-height: 150px;
 }
 
 .title {
