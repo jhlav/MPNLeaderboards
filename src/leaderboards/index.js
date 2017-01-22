@@ -10,8 +10,8 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
+import NavRibbon from '../../components/NavRibbon';
 import s from './styles.css';
-import { title, html } from './index.md';
 
 class LeaderboardsPage extends React.Component {
 
@@ -22,8 +22,9 @@ class LeaderboardsPage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <NavRibbon title="Platform" />
+        <NavRibbon title="Game" />
+        <NavRibbon title="Gamemode" />
       </Layout>
     );
   }
