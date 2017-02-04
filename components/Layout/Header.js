@@ -31,7 +31,7 @@ class Header extends React.Component {
             MPN
           </Link>
           <div className="mdl-layout-spacer"></div>
-          <Navigation />
+          <Navigation className="mdl-layout--large-screen-only" />
         </div>
       </header>
     );

@@ -1,27 +1,27 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import { createStore } from 'redux';
+
+// Comment out this and devToolsEnhancer() for production.
+import devToolsEnhancer from 'remote-redux-devtools';
+
+// Using constants to avoid typos from string literals.
+import CHANGE_VIEW from '../actions/constants';
 
 // Centralized application state
 // For more information visit http://redux.js.org/
-const initialState = { count: 0 };
+const initialState = { view: 'root' };
 
+/* First parameter for createStore() is a reducer, or
+ * in this case, treating the whole thing as a reducer.
+ * TODO Create separate reducers if/when app grows.
+ * TODO Use combineReducers() to merge reducers into one.
+ */
 const store = createStore((state = initialState, action) => {
-  // TODO: Add action handlers (aka "reducers")
   switch (action.type) {
-    case 'COUNT':
-      return { ...state, count: (state.count) + 1 };
+    case CHANGE_VIEW:
+      return { ...state, view: action.view };
     default:
       return state;
   }
-});
+}, devToolsEnhancer());
 
 export default store;

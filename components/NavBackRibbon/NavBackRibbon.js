@@ -4,7 +4,6 @@ import Link from '../Link';
 
 class NavRibbon extends React.Component {
   static propTypes = {
-    title: PropTypes.string,
     to: PropTypes.string.isRequired,
   }
 
@@ -12,7 +11,7 @@ class NavRibbon extends React.Component {
     return (
       <Link onClick={this.props.onClick} to={this.props.to} className={s.link}>
         <div className={s.ribbon}>
-          <span className={s.title}>{this.props.title}</span>
+          <span className={s.title}><i className={`material-icons ${s.icon}`}>arrow_back</i> Go Back</span>
         </div>
       </Link>
     );

@@ -21,7 +21,15 @@
     "page": "./home"
   },
   {
-    "path": "/leaderboards",
-    "page": "./leaderboards"
+    "path": "/boards",
+    "page": "./boards"
+  },
+  {
+    "path": "/boards/:category",
+    "page": "./boards"
+  },
+  {
+    "path": "/boards/:category/:item",
+    "page": "./boards"
   }
 ]

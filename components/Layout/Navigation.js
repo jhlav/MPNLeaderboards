@@ -22,11 +22,13 @@ class Navigation extends React.Component {
   }
 
   render() {
+    const responsivenessFix = `mdl-navigation ${this.props.className}`;
+
     return (
-      <nav className="mdl-navigation" ref={node => (this.root = node)}>
+      <nav className={responsivenessFix} ref={node => (this.root = node)}>
         <Link className="mdl-navigation__link" to="/">Home</Link>
         <Link className="mdl-navigation__link" to="/about">About</Link>
-        <Link className="mdl-navigation__link" to="/leaderboards">Leaderboards</Link>
+        <Link className="mdl-navigation__link" to="/boards">Leaderboards</Link>
       </nav>
     );
   }
