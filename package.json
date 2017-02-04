@@ -1,7 +1,7 @@
 {
   "name": "MPNLeaderboards",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "engines": {
     "node": ">=6",
     "npm": ">=3.8"

@@ -9,8 +9,8 @@
  */
 
 module.exports = {
-  title: 'Mario Party Netplay',        // Your website title
-  url: 'https://rsb.kriasoft.com',          // Your website URL
-  project: 'MPNLeaderboards',      // Firebase project. See README.md -> How to Deploy
+  title: 'MPNLeaderboards',        // Your website title
+  url: 'https://mpnleaderboards.firebaseapp.com/',          // Your website URL
+  project: 'mpnleaderboards',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
 };
